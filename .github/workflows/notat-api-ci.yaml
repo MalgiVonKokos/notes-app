@@ -30,10 +30,10 @@ jobs:
       - name: Push to GitHub Packages
         uses: docker/build-push-action@v1
         with:
-          username: MalgiVonKokos
+          username: malgiVonKokos
           password: ${{ secrets.CR_PAT }}
           registry: ghcr.io
-          repository: MalgiVonKokos/notes-app/notat-api
+          repository: malgiVonKokos/notes-app/notat-api
           path: notat-api
           tag_with_sha: true
           tags: latest
